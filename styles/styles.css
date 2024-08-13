@@ -7,7 +7,9 @@
     --white: #ffffff;
     --color-fondo:#F3F5FC;
     --color-boton: #D8DFE8;
-    --font-weight-regular:400
+    --font-weight-regular:400;
+    --font-size-pequeña:16px;
+    --font-size-grande:32px;
 }
 
 *{
@@ -50,7 +52,7 @@ body{
 .texto_entrada{
     border: none;
     font-weight: var(--font-weight-regular);
-    font-size: 32px;
+    font-size: var(--font-size-grande);
     padding: 15% 0 20% 0%;
     resize: none;
 }
@@ -64,7 +66,7 @@ body{
 .texto_informacion{
     
     color: var(--gray-400);
-    font-size: 12px;
+    font-size:var(--font-size-pequeña);
     font-weight: var(--font-weight-regular);
     display: flex;
     gap: 8px;
@@ -74,7 +76,7 @@ body{
  border: none;
  width: 100%;
  text-align: center;
- font-size: 16px ;
+ font-size: var(--font-size-pequeña) ;
  font-weight: var(--font-weight-regular);
  border-radius: 24px ;
  display: flex;
@@ -122,11 +124,12 @@ background-color: inherit;
 
 .mensaje_resultado{ 
     
-    font-size: 32px;
+    font-size: var(--font-size-grande);
     color: var(--dark-blue-300);
     font-weight: var(--font-weight-regular);
     width: 100%;
     max-height: 950px;
+    margin-bottom: 5px;
     overflow-y: auto;/*Barra deslizadora*/
     overflow-wrap: break-word;/*rompe palabras para ajustarse al ancho*/
   
@@ -153,7 +156,7 @@ background-color: inherit;
 
 .texto_resultado{
     margin-bottom: 16px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--gray-500);
     
@@ -161,7 +164,7 @@ background-color: inherit;
 }
 
 .texto_instruccion{
-    font-size: 16px;
+    font-size: var(--font-size-pequeña);
     font-weight: var(--font-weight-regular);
     color: var(--gray-400);
 }
@@ -169,8 +172,8 @@ background-color: inherit;
 
 
 .boton_copiar{
-    margin-top:auto;
-   font-size: 16px;
+   margin-top:auto;
+   font-size: var(--font-size-pequeña);
    font-weight:var(--font-weight-regular);
    color:var(--dark-blue-300);
    border-radius: 24px;
