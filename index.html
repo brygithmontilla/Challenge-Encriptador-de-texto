@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles/styles.css">
+   <script src="script.js" defer></script>
+</head>
+<body>
+    
+       
+    
+    <main class="contenido">
+
+        <img src="assets/Logo-alura.png" alt="logo de alura"  class="head_imagen">
+        <section class="seccion_entrada">
+           <textarea class="texto_entrada"  cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+           <div>
+               <p class="texto_informacion"> 
+                <img src="assets/Group.png" alt="Icono de advertencia"> 
+                Solo letras minúsculas y sin acentos</p>
+           </div>
+
+           <div class="boton">
+            <button  type="button" onclick="btnEncriptar();"  class="boton encriptar"> Encriptar</button>
+            <button type="button" onclick="btnDesencriptar();"class="boton descencriptar">Desencriptar</button>
+           </div>
+        </section>
+
+        <section class="seccion_salida">  
+            <p class="mensaje_resultado"></p> 
+              <div class="elementos_iniciales" >
+                <img src="assets/Muñeco.png" alt="Imagen de un muñeco sosteniendo una lupa" class="salida_imagen">
+                <div class="textos">
+                    <p class="texto_resultado">Ningún mensaje fue encontrado</p>
+                    <p class="texto_instruccion">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+              </div>  
+            <button type="button" onclick="copiar();" class="boton_copiar"> Copiar </button>
+              
+        </section>
+        
+    </main>
+    
+</body>
+</html>
