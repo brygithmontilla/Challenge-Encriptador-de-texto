@@ -1,5 +1,5 @@
 ## Encriptador de Textos
-<image src="/images/pagina-web.jpg" alt="imagen de la pagina web">
+<image src="/assets/pagina-web.jpg" alt="imagen de la pagina web">
 
 
 ## Descripción del Proyecto
