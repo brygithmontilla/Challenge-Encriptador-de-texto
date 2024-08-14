@@ -8,8 +8,8 @@
     --color-fondo:#F3F5FC;
     --color-boton: #D8DFE8;
     --font-weight-regular:400;
-    --font-size-pequeña:16px;
-    --font-size-grande:32px;
+    --font-size-pequeña:1rem;
+    --font-size-grande:2rem;
 }
 
 *{
@@ -21,10 +21,8 @@
 }
 
 body{
-    display: flex;
-    flex-direction: column;
     margin: 0;
-     
+    padding: 0;    
 }
 
 
@@ -45,7 +43,7 @@ body{
    width: 50%;
    display: flex;
    flex-direction: column;
-  
+ 
 }
 
 
@@ -55,6 +53,7 @@ body{
     font-size: var(--font-size-grande);
     padding: 15% 0 20% 0%;
     resize: none;
+    margin: 0;
 }
 
 .texto_entrada:focus{
@@ -73,6 +72,8 @@ body{
 }
 
 .boton{
+ margin: 0;
+ padding: 0;   
  border: none;
  width: 100%;
  text-align: center;
@@ -103,6 +104,7 @@ body{
 
 
 .seccion_salida {
+    box-shadow: var(--white); 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -112,7 +114,6 @@ body{
     width: 25%;
     height: 950px;
     box-sizing: border-box;
-    padding: 2%;
 }  
  
 
@@ -136,7 +137,9 @@ background-color: inherit;
 }
  
 .elementos_iniciales{
-    box-shadow: var(--white); 
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .salida_imagen{
@@ -182,3 +185,75 @@ background-color: inherit;
    width: 100%;
 }
 
+
+@media(min-width: 768px) and (max-width: 1024px){
+
+body{
+    width:100%
+}
+.contenido{
+    flex-direction:column;
+    align-items: flex-start;
+    padding: 5%;
+} 
+
+.head_imagen{
+ width: auto;
+ 
+}
+.seccion_entrada{
+   width: 100%;
+   
+}
+
+
+
+.seccion_salida{
+    width: 100%;
+    justify-content: center;
+    max-height: 343px;
+}
+
+
+.salida_imagen{
+    display: none;
+}
+}
+
+@media(min-width: 320px) and (max-width: 480px){
+  
+    body{
+        width:100%
+    }
+    .contenido{
+        flex-direction:column;
+        align-items: flex-start;
+        padding: 5%;
+    } 
+    
+    .head_imagen{
+     width: 20%;
+     
+    }
+    .seccion_entrada{
+       width: 100%;
+       
+    }
+    .boton{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    
+    .seccion_salida{
+        width: 100%;
+        justify-content: center;
+        max-height: 343px;
+    }
+    
+    
+    .salida_imagen{
+        display: none;
+    } 
+}
