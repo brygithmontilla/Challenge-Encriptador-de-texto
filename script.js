@@ -47,7 +47,7 @@ function desencriptarTexto(texto){
 
 function btnDesencriptar(){
   condicinesPresionarBoton();
-  const textoEntrada = obtenerTexto(".texto_entrada");
+  const textoEntrada = obtenerTexto(".texto_entrada").value;
   const textoEncriptado = desencriptarTexto(textoEntrada);
   asignarTextoElemento('.mensaje_resultado', textoEncriptado);
 }
