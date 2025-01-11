@@ -3,7 +3,7 @@
 
 
 ## Descripción del Proyecto
-Este proyecto consiste en una aplicación web  que permite encriptar y desencriptar texto utilizando un conjunto específico de "llavews"s de encriptacion. 
+Este proyecto consiste en una aplicación web  que permite encriptar y desencriptar texto utilizando un conjunto específico de "llaves" de encriptacion. 
 
 ## Funcionalidades
 - **Encriptación de Texto**: Convierte un texto normal en una versión encriptada aplicando reglas de sustitución específicas.
